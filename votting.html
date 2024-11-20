@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div style="text-align: center;">
+        <h1>Votting  Eligibility</h1>
+    
+       
+           <label   for="">enter Your Age
+           </label><input id="age" type="number">
+            <button onclick="eligibilty()">check</button>
+             <div id="output"></div>
+    
+   </div>
+</body>
+<script>
+const eligibilty=()=>{
+    document.getElementById(age.value)
+    if(age.value){
+        if(age.value>=18){
+           output.innerHTML="eligible for votting"
+            output.style.color="green"
+        }
+        else{
+            output.innerHTML=" not eligible for votting"
+            output.style.color="blue"
+        }
+
+    }
+    else{
+        alert("enter a valid age")
+    }
+}
+
+
+</script>
+</html>
